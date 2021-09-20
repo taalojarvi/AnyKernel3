@@ -4,14 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Installing Stratosphere Kernel
-do.devicecheck=0
+kernel.string=Installing Stratosphere Kernel by @taalojarvi
+do.devicecheck=1
 do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=PL2
-device.name2=
+device.name1=surya
+device.name2=karna
 device.name3=
 device.name4=
 device.name5=
@@ -20,7 +20,7 @@ supported.patchlevels=
 '; } # end properties
 
 # shell variables
-block=boot;
+block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=0;
 ramdisk_compression=auto;
 
